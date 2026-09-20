@@ -58,6 +58,7 @@
 - [KV cache 用量报 90%，可能只装了一半](https://zhuanlan.zhihu.com/p/2084342687113671847) — 给 vLLM 的那个指标补丁
 - [我写了个容量规划工具，然后让它拒绝回答最常被问的那个问题](https://zhuanlan.zhihu.com/p/2084644096598087461) — queuebound
 - [我写了十二个项目去质问别人的数字，然后发现我自己的 linter 在编数字](https://zhuanlan.zhihu.com/p/2084769509529875010) — drainlag
+- [一个 1.35 亿参数的模型，每秒只解码 48 个 token，而 GPU 有 81% 的时间是空的](https://zhuanlan.zhihu.com/p/2085036453206156056) — decodefloor
 
 每条结论都配一条能复现的命令。比如 servedoctor 那条——同一台服务器、同一个配置速率，闭环压测报出的 q99 比开环短 16.5 倍——**你可以自己跑**：45 秒，纯 Python 标准库，不需要 GPU、模型或网络。
 
